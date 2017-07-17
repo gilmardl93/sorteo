@@ -17,7 +17,7 @@ class Postulante extends Model
 
     public function scopeValidos($cadenaSQL)
     {
-        return $cadenaSQL->where('codigo','<>','');
+        return $cadenaSQL->where('datos_ok',true);
     }
     
 }
