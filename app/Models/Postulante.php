@@ -6,8 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Postulante extends Model
 {
-    protected $connection = "pgsql_admision";
-
     protected $table = "postulante";
 
     public function getDatosAttribute()
